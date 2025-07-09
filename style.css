@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B1E23;
+    position: relative;
+    width: 100%;
+    /* overflow-x: hidden; */
+    /* border: 2px solid red; */
+
+
+}
+
+.nav {
+    /* background-color: rgb(41, 31, 31); */
+    background-color: #1B1E23;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 10px; */
+    padding: 40px;
+    font-size: 20px;
+
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 2; */
+}
+
+@media screen and (max-width:600px) {
+    .nav {
+        background-color: #1B1E23;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* margin: 10px; */
+        padding: 40px;
+        font-size: 20px;
+        /* position: sticky; */
+        /* top: 0; */
+        /* z-index: 2; */
+    }
+}
+
+.navright ul {
+    display: flex;
+    gap: 3vw;
+
+}
+
+.navright ul li {
+    list-style: none;
+}
+
+.navright ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+
+.menuicon {
+    width: 25px;
+}
+
+.main {
+    width: 100%;
+    min-height: 60vh;
+    object-fit: contain;
+    /* background-blend-mode: color-dodge; */
+    /* background-size: cover; */
+
+    background-position: 50vw;
+    /* z-index: 0; */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.hero {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+
+    /* background-image: url('/Images/bg2.png');
+    background-repeat: no-repeat; */
+    /* background-size: contain; */
+
+
+}
+
+.herocontent {
+    margin-top: 30vh;
+    margin-left: 6vw;
+}
+
+.hello {
+    font-size: 20px;
+    font-family: 'Public sans', sans-serif;
+    color: red;
+}
+
+.herocontent p {
+    font-size: 74px;
+    font-family: "Castoro", serif;
+
+}
+
+@media screen and (max-width: 600px) {
+    .herocontent p {
+        font-size: 30px;
+    }
+}
+
+.left {
+    background-color: #ECEEEC;
+    width: 50%;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.buttons div a {
+    height: 30px;
+    border: none;
+    padding: 20px 52px;
+    font-size: 12px;
+    line-height: 52px;
+    letter-spacing: 4px;
+    text-decoration: none;
+
+
+}
+
+#btn1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn1:hover {
+    background-color: #C93F1D;
+
+}
+
+#btn2 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#btn2:hover {
+    background-color: black;
+    color: white;
+}
+
+.right {
+    position: relative;
+    width: 50vw;
+    /* background-image: url('/Images/bg2.png'); */
+
+}
+
+.line {
+    width: 120px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    left: -118px;
+}
+
+.cvbox {
+    width: 20vw;
+    z-index: 10;
+    position: absolute;
+    bottom: 180px;
+    left: 5px;
+}
+
+.cvbox button {
+
+    border: 2px solid white;
+    background: none;
+    letter-spacing: 1px;
+    color: white;
+    padding: 12px 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cvbox button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.about {
+    background-color: #FBFCFB;
+    min-height: 100vh;
+    color: black;
+    /* z-index: 2; */
+
+
+}
+
+.page {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.about p {
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    font-family: 'Public sans', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.page h2 {
+    font-size: 60px;
+    font-family: 'Castoro';
+}
+
+.skills {
+
+    min-height: 100vh;
+
+
+}
+
+.skillcards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 30px;
+}
+
+.card {
+    padding: 20px;
+
+    background-color: rgba(247, 238, 238, 0.637);
+    /* width: 24vw; */
+    width: calc(33.33% - 20px);
+    border-radius: 8px;
+    /* height: 150px; */
+}
+
+.project {
+
+    min-height: 100vh;
+    /* display: flex; */
+
+
+
+}
+
+.project-card {
+
+    /* width: 30vw; */
+    background-color: #FBFCFB;
+
+    border-radius: 6px;
+    padding: 17px 27px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.project-card a {
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 12px;
+}
+
+.pcards {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    overflow-x: auto;
+    gap: 1vw;
+}
+
+.contacts {
+    background-color: #1A1A1A;
+    min-height: 80vh;
+
+
+}
+
+.details {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.dleft {
+    width: 40vw;
+    color: #767776;
+
+    font-size: 24px;
+    font-family: 'Public sans', sans-serif;
+}
+
+.dmiddle ul li {
+    list-style: none;
+    color: #767776;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.dright,
+.dmiddle>div {
+    font-size: 24px;
+    font-family: "Castoro";
+}
+
+.dright ul li {
+    list-style: none;
+    color: #767776;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.dmiddle ul li:hover {
+    color: white;
+
+}
+
+.dright ul li:hover {
+    color: white;
+}
+
+.contbuttons {
+    margin: 1vh 10vw;
+    width: 100%;
+}
+
+.contbuttons button {
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    font-family: 'Public sans';
+    letter-spacing: 2px;
+    padding: 15px 13vw;
+    font-weight: 500;
+
+}
+
+.dright ul li {
+    overflow-x: hidden;
+    overflow-wrap: wrap;
+}
+
+#second {
+    background-color: #1A1A1A;
+    color: white;
+
+    border: 2px solid white;
+}
+
+#second:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#first {
+    background-color: #C93F1D;
+    margin-right: 5vw;
+    cursor: pointer;
+
+}
+
+.footer {
+    padding: 4vh 10vw;
+    /* width: 100%; */
+    /* margin-top: 5vw; */
+    color: #767776;
+    min-height: 20vh;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: space-between;
+}
+
+.move img {
+    cursor: pointer;
+    filter: invert(1);
+
+}
